@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SKG </title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Innomativs Reaserch Lab Company Portal</h1>
+    </header>
+
+    <!-- Employee Registration Form -->
+    <section class="registration-form">
+        <h2>Employee Registration</h2>
+        <form id="employeeForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="HR">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="empid">Employee ID:</label>
+                <input type="number" id="empid" name="empid" required>
+            </div>
+
+            <div class="form-group">
+                <label for="profilePic">Profile Picture URL:</label>
+                <input type="url" id="profilePic" name="profilePic" required>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Employee List Section -->
+    <section class="employee-list">
+        <h2>Employee List</h2>
+        <ol id="employeeList"></ol>
+    </section>
+
+    <!-- Employee Details Table Section -->
+    <section class="employee-table">
+        <h2>Employee Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTableBody"></tbody>
+        </table>
+    </section>
+
+    <!-- Embedded Map Section -->
+    <section class="map-section">
+        <h2>Company Location</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153.15494205450567!2d78.38984868028099!3d17.498109483592998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1696250908813!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <script src="./static/app.js"></script>
+</body>
+</html>
